@@ -11,13 +11,13 @@ import SwiftUI
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var popover: AppPopover<ContentView>!
+    var popover: AppPopover<DashboardView>!
     var statusItem: StatusBarItem!
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
 
         // Create the SwiftUI view that provides the window contents.
-        let contentView = ContentView()
+        let contentView = DashboardView()
         
         // Create the Popover
         self.popover = AppPopover(contentView: contentView)

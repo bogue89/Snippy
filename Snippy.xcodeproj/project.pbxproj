@@ -16,6 +16,9 @@
 		C3CCAF912658DCCF001C3A41 /* SnippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCAF902658DCCF001C3A41 /* SnippyUITests.swift */; };
 		C3CCAF9F2658E392001C3A41 /* AppPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCAF9E2658E392001C3A41 /* AppPopover.swift */; };
 		C3CCAFA12658E4D4001C3A41 /* StatusBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCAFA02658E4D4001C3A41 /* StatusBarItem.swift */; };
+		C3CCAFA426597394001C3A41 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCAFA326597394001C3A41 /* DashboardView.swift */; };
+		C3CCAFA6265973B0001C3A41 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCAFA5265973B0001C3A41 /* Dashboard.swift */; };
+		C3CCAFA92659763A001C3A41 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCAFA82659763A001C3A41 /* Screen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		C3CCAF922658DCCF001C3A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3CCAF9E2658E392001C3A41 /* AppPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopover.swift; sourceTree = "<group>"; };
 		C3CCAFA02658E4D4001C3A41 /* StatusBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarItem.swift; sourceTree = "<group>"; };
+		C3CCAFA326597394001C3A41 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C3CCAFA5265973B0001C3A41 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		C3CCAFA82659763A001C3A41 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 				C3CCAF6F2658DCCE001C3A41 /* AppDelegate.swift */,
 				C3CCAF9E2658E392001C3A41 /* AppPopover.swift */,
 				C3CCAFA02658E4D4001C3A41 /* StatusBarItem.swift */,
+				C3CCAFA72659761A001C3A41 /* Screen */,
 				C3CCAFA2265967F1001C3A41 /* Dashboard */,
 				C3CCAF712658DCCE001C3A41 /* ContentView.swift */,
 				C3CCAF732658DCCF001C3A41 /* Assets.xcassets */,
@@ -145,8 +152,18 @@
 		C3CCAFA2265967F1001C3A41 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				C3CCAFA326597394001C3A41 /* DashboardView.swift */,
+				C3CCAFA5265973B0001C3A41 /* Dashboard.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		C3CCAFA72659761A001C3A41 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				C3CCAFA82659763A001C3A41 /* Screen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CCAFA92659763A001C3A41 /* Screen.swift in Sources */,
 				C3CCAF722658DCCE001C3A41 /* ContentView.swift in Sources */,
 				C3CCAF702658DCCE001C3A41 /* AppDelegate.swift in Sources */,
+				C3CCAFA426597394001C3A41 /* DashboardView.swift in Sources */,
 				C3CCAFA12658E4D4001C3A41 /* StatusBarItem.swift in Sources */,
+				C3CCAFA6265973B0001C3A41 /* Dashboard.swift in Sources */,
 				C3CCAF9F2658E392001C3A41 /* AppPopover.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
