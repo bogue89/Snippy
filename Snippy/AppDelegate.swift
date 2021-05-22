@@ -12,9 +12,10 @@ import SwiftUI
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     var window: NSWindow!
-
+    var statusBarItem: NSStatusItem!
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        print("applicationDidFinishLaunching")
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
 
@@ -28,12 +29,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         window.setFrameAutosaveName("Main Window")
         window.contentView = NSHostingView(rootView: contentView)
         window.makeKeyAndOrderFront(nil)
+        
+        statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+        statusBarItem.button?.title = "Snippy"
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-
 }
 
