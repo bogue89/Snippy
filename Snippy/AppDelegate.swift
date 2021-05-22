@@ -11,27 +11,19 @@ import SwiftUI
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    var window: NSWindow!
-    var statusBarItem: NSStatusItem!
-
+    var popover: AppPopover<ContentView>!
+    var statusItem: StatusBarItem!
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        print("applicationDidFinishLaunching")
+
         // Create the SwiftUI view that provides the window contents.
         let contentView = ContentView()
-
-        // Create the window and set the content view.
-        window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 480, height: 300),
-            styleMask: [.titled, .closable, .miniaturizable, .resizable, .fullSizeContentView],
-            backing: .buffered, defer: false)
-        window.isReleasedWhenClosed = false
-        window.center()
-        window.setFrameAutosaveName("Main Window")
-        window.contentView = NSHostingView(rootView: contentView)
-        window.makeKeyAndOrderFront(nil)
         
-        statusBarItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        statusBarItem.button?.title = "Snippy"
+        // Create the Popover
+        self.popover = AppPopover(contentView: contentView)
+        
+        // Create the Status Bar Item
+        self.statusItem = StatusBarItem(popover: self.popover)
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

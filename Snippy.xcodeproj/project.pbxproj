@@ -14,6 +14,8 @@
 		C3CCAF7A2658DCCF001C3A41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3CCAF782658DCCF001C3A41 /* Main.storyboard */; };
 		C3CCAF862658DCCF001C3A41 /* SnippyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCAF852658DCCF001C3A41 /* SnippyTests.swift */; };
 		C3CCAF912658DCCF001C3A41 /* SnippyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCAF902658DCCF001C3A41 /* SnippyUITests.swift */; };
+		C3CCAF9F2658E392001C3A41 /* AppPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCAF9E2658E392001C3A41 /* AppPopover.swift */; };
+		C3CCAFA12658E4D4001C3A41 /* StatusBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CCAFA02658E4D4001C3A41 /* StatusBarItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		C3CCAF8C2658DCCF001C3A41 /* SnippyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnippyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3CCAF902658DCCF001C3A41 /* SnippyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnippyUITests.swift; sourceTree = "<group>"; };
 		C3CCAF922658DCCF001C3A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3CCAF9E2658E392001C3A41 /* AppPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopover.swift; sourceTree = "<group>"; };
+		C3CCAFA02658E4D4001C3A41 /* StatusBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			children = (
 				C3CCAF6F2658DCCE001C3A41 /* AppDelegate.swift */,
 				C3CCAF712658DCCE001C3A41 /* ContentView.swift */,
+				C3CCAF9E2658E392001C3A41 /* AppPopover.swift */,
+				C3CCAFA02658E4D4001C3A41 /* StatusBarItem.swift */,
 				C3CCAF732658DCCF001C3A41 /* Assets.xcassets */,
 				C3CCAF782658DCCF001C3A41 /* Main.storyboard */,
 				C3CCAF7B2658DCCF001C3A41 /* Info.plist */,
@@ -267,6 +273,8 @@
 			files = (
 				C3CCAF722658DCCE001C3A41 /* ContentView.swift in Sources */,
 				C3CCAF702658DCCE001C3A41 /* AppDelegate.swift in Sources */,
+				C3CCAFA12658E4D4001C3A41 /* StatusBarItem.swift in Sources */,
+				C3CCAF9F2658E392001C3A41 /* AppPopover.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
