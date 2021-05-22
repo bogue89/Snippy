@@ -103,9 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				C3CCAF6F2658DCCE001C3A41 /* AppDelegate.swift */,
-				C3CCAF712658DCCE001C3A41 /* ContentView.swift */,
 				C3CCAF9E2658E392001C3A41 /* AppPopover.swift */,
 				C3CCAFA02658E4D4001C3A41 /* StatusBarItem.swift */,
+				C3CCAFA2265967F1001C3A41 /* Dashboard */,
+				C3CCAF712658DCCE001C3A41 /* ContentView.swift */,
 				C3CCAF732658DCCF001C3A41 /* Assets.xcassets */,
 				C3CCAF782658DCCF001C3A41 /* Main.storyboard */,
 				C3CCAF7B2658DCCF001C3A41 /* Info.plist */,
@@ -139,6 +140,13 @@
 				C3CCAF922658DCCF001C3A41 /* Info.plist */,
 			);
 			path = SnippyUITests;
+			sourceTree = "<group>";
+		};
+		C3CCAFA2265967F1001C3A41 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
