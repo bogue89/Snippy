@@ -1,5 +1,5 @@
 //
-//  Dashboard.swift
+//  DashboardViewModel.swift
 //  Snippy
 //
 //  Created by Jorge Alberto Benavides Ojinaga on 22/05/21.
