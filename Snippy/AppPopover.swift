@@ -11,7 +11,7 @@ class AppPopover<ContentView:View>: NSPopover {
     
     init(contentView: ContentView) {
         super.init()
-        self.contentSize = NSSize(width: 320, height: 600)
+        self.contentSize = NSSize(width: 320, height: 480)
         self.behavior = .transient
         self.contentViewController = NSHostingController(rootView: contentView)
     }

@@ -7,25 +7,22 @@
 
 import SwiftUI
 
-class Dashboard: ObservableObject {
+class DashboardViewModel: ObservableObject {
     @Published
-    var screenshots:[NSImage] = []
+    var screenshots:[Screenshot] = []
     var screenshotsCount: Int { screenshots.count }
     func takeScreenshot() {
-        let displayID = Screen.getMainDisplayID()
-        guard
-        let cgImage = try? Screen.createImageFromDisplay(displayID) else { return }
-        let image = NSImage(cgImage: cgImage, size: NSSize(width: 420, height: 80))
-        addScreeshot(image)
+        guard let screenshot = Screenshot() else { return }
+        addScreeshot(screenshot)
     }
     func takeSelectionScreeshot() {
-        //addScreeshot(image)
+        
     }
-    func addScreeshot(_ image: NSImage) {
-        screenshots.insert(image, at: 0)
+    func addScreeshot(_ img: Screenshot) {
+        Pasteboard.set(img)
+        screenshots.insert(img, at: 0)
         if screenshots.count > 10 {
             screenshots.removeSubrange(10..<screenshots.count)
         }
     }
 }
-
